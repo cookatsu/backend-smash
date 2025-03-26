@@ -18,15 +18,9 @@ Daten werden in PostgreSQl gespeichert (-pgAdmin), Node.js u. express verwendet
 | `routes.js`      | Endpunkte für das Ranking-System (GET, POST, DELETE)       |
 | `.env`           | Datenbank-Zugangsdaten, in git.ignore                      |
 
-ROuten:
-GET    -    /                                   -   Server läuft
-GET    -    /ranking                            -   alle Bewertungen pro user_id
-POST   -    /ranking                            -   fügt Bewertung hinzu einmalig pro Charakter & User
-DELETE -    /ranking/:user_id/:character_name   -   Löscht Bewertung für spezif Char und User
-
 
 Einsatz KI
-ChatGPT wurde im Projekt punktuell zur Unterstützung eingesetzt, vor allem zur Strukturierung, Codeoptimierung und für gezielte Hilfestellungen bei technischen Fragen. Die Umsetzung erfolgte stets mit eigenem Verständnis und wurde angepasst für Clean Code.
+ChatGPT wurde im Projekt zur Unterstützung eingesetzt, vor allem zur Strukturierung, Codeoptimierung und für gezielte Hilfestellungen bei technischen Fragen. Die Umsetzung erfolgte stets mit eigenem Verständnis und wurde angepasst für Clean Code.
 
 
 server.js: Logik, Struktur
@@ -37,10 +31,28 @@ Readme (teils) für Formulierungen, Tabellenaufbau
 
 
 
-Starten der Anwendung 
+### 🧪 Test-Zugang zur Render-Datenbank (für Ranking):
+
+
+DATABASE_URL=postgresql://meine_db_user:1JLBIjKPZtCexmSuwY0EKHJEQfOtbtNK@dpg-cvhs8d1c1ekc738f28og-a.frankfurt-postgres.render.com:5432/meine_db
+ -> Verbindung zur Datenbank
+ .env aus gitignore entfernz
+
+
+
+Starten der Anwendung nach cloning:
 Nach dem Installieren der Abhängigkeiten mit `npm install` kann der Server lokal mit folgendem Befehl gestartet werden:
 
-```bash
 node server.js
 
 Die API ist anschließend erreichbar unter: http://localhost:3000
+
+ROuten: (port 3000)
+GET    -    /                                   -   Server läuft
+GET    -    /ranking                            -   alle Bewertungen pro user_id
+POST   -    /ranking                            -   fügt Bewertung hinzu einmalig pro Charakter & User
+DELETE -    /ranking/:user_id/:character_name   -   Löscht Bewertung für spezif Char und User
+
+
+    VIEL SPAß
+𖡼.𖤣𖥧𖡼.𖤣𖥧𖡼.𖤣𖥧𖡼.𖤣𖥧
