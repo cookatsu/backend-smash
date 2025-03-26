@@ -41,9 +41,13 @@ DATABASE_URL=postgresql://meine_db_user:1JLBIjKPZtCexmSuwY0EKHJEQfOtbtNK@dpg-cvh
 
 
 Starten der Anwendung nach cloning:
-Nach dem Installieren der Abhängigkeiten mit `npm install` kann der Server lokal mit folgendem Befehl gestartet werden:
+-git clone https://github.com/cookatsu/backend-smash.git
+-node.js, und angularcli installieren npm install -g @angular/cli
+cd backend-smash
+npm install
+npm start
 
-node server.js
+sowie start mit: node server.js
 
 Die API ist anschließend erreichbar unter: http://localhost:3000
 
